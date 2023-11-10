@@ -11,6 +11,17 @@
 		3F3904852AF164B50037BC66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3904842AF164B50037BC66 /* ContentView.swift */; };
 		3F3904872AF164B70037BC66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3904862AF164B70037BC66 /* Assets.xcassets */; };
 		3F39048A2AF164B70037BC66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3904892AF164B70037BC66 /* Preview Assets.xcassets */; };
+		3F3904922AF165520037BC66 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3904912AF165520037BC66 /* APIEndpoints.swift */; };
+		3F3904942AF166060037BC66 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3904932AF166060037BC66 /* APIError.swift */; };
+		3F3904962AF167460037BC66 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3904952AF167460037BC66 /* APIService.swift */; };
+		3F3904992AF16A1E0037BC66 /* ContentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3904982AF16A1E0037BC66 /* ContentListViewModel.swift */; };
+		3F39049B2AF16D0D0037BC66 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39049A2AF16D0D0037BC66 /* Property.swift */; };
+		3F3904A02AF179F80037BC66 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39049F2AF179F80037BC66 /* Response.swift */; };
+		3F3904A22AF17A200037BC66 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3904A12AF17A200037BC66 /* Feature.swift */; };
+		3F4C0C972AFE6BDD0082534F /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3F4C0C962AFE6BDD0082534F /* AppCenterAnalytics */; };
+		3F4C0C992AFE6BDD0082534F /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 3F4C0C982AFE6BDD0082534F /* AppCenterCrashes */; };
+		3F4C0C9B2AFE6BDD0082534F /* AppCenterDistribute in Frameworks */ = {isa = PBXBuildFile; productRef = 3F4C0C9A2AFE6BDD0082534F /* AppCenterDistribute */; };
+		3F4C0C9D2AFE6C820082534F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C0C9C2AFE6C820082534F /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,14 @@
 		3F3904842AF164B50037BC66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3F3904862AF164B70037BC66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F3904892AF164B70037BC66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F3904912AF165520037BC66 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		3F3904932AF166060037BC66 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		3F3904952AF167460037BC66 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3F3904982AF16A1E0037BC66 /* ContentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentListViewModel.swift; sourceTree = "<group>"; };
+		3F39049A2AF16D0D0037BC66 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		3F39049F2AF179F80037BC66 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		3F3904A12AF17A200037BC66 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		3F4C0C9C2AFE6C820082534F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4C0C972AFE6BDD0082534F /* AppCenterAnalytics in Frameworks */,
+				3F4C0C992AFE6BDD0082534F /* AppCenterCrashes in Frameworks */,
+				3F4C0C9B2AFE6BDD0082534F /* AppCenterDistribute in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +73,11 @@
 		3F3904812AF164B50037BC66 /* iOSTest */ = {
 			isa = PBXGroup;
 			children = (
-				3F3904822AF164B50037BC66 /* iOSTestApp.swift */,
-				3F3904842AF164B50037BC66 /* ContentView.swift */,
+				3F3904972AF169D50037BC66 /* Models */,
+				3F3904902AF1653F0037BC66 /* Networking */,
+				3F3904A32AF17CCC0037BC66 /* App */,
+				3F39049E2AF179DE0037BC66 /* Screens */,
+				3F3904A42AF17CF00037BC66 /* ViewModel */,
 				3F3904862AF164B70037BC66 /* Assets.xcassets */,
 				3F3904882AF164B70037BC66 /* Preview Content */,
 			);
@@ -65,6 +90,51 @@
 				3F3904892AF164B70037BC66 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F3904902AF1653F0037BC66 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3F3904912AF165520037BC66 /* APIEndpoints.swift */,
+				3F3904932AF166060037BC66 /* APIError.swift */,
+				3F3904952AF167460037BC66 /* APIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3F3904972AF169D50037BC66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F39049F2AF179F80037BC66 /* Response.swift */,
+				3F3904A12AF17A200037BC66 /* Feature.swift */,
+				3F39049A2AF16D0D0037BC66 /* Property.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3F39049E2AF179DE0037BC66 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3F3904842AF164B50037BC66 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3F3904A32AF17CCC0037BC66 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3F3904822AF164B50037BC66 /* iOSTestApp.swift */,
+				3F4C0C9C2AFE6C820082534F /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3F3904A42AF17CF00037BC66 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3F3904982AF16A1E0037BC66 /* ContentListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +153,11 @@
 			dependencies = (
 			);
 			name = iOSTest;
+			packageProductDependencies = (
+				3F4C0C962AFE6BDD0082534F /* AppCenterAnalytics */,
+				3F4C0C982AFE6BDD0082534F /* AppCenterCrashes */,
+				3F4C0C9A2AFE6BDD0082534F /* AppCenterDistribute */,
+			);
 			productName = iOSTest;
 			productReference = 3F39047F2AF164B50037BC66 /* iOSTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +186,9 @@
 				Base,
 			);
 			mainGroup = 3F3904762AF164B50037BC66;
+			packageReferences = (
+				3F4C0C952AFE6BDD0082534F /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */,
+			);
 			productRefGroup = 3F3904802AF164B50037BC66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +215,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3904A02AF179F80037BC66 /* Response.swift in Sources */,
+				3F39049B2AF16D0D0037BC66 /* Property.swift in Sources */,
+				3F3904922AF165520037BC66 /* APIEndpoints.swift in Sources */,
+				3F3904962AF167460037BC66 /* APIService.swift in Sources */,
+				3F3904992AF16A1E0037BC66 /* ContentListViewModel.swift in Sources */,
+				3F3904942AF166060037BC66 /* APIError.swift in Sources */,
+				3F3904A22AF17A200037BC66 /* Feature.swift in Sources */,
 				3F3904852AF164B50037BC66 /* ContentView.swift in Sources */,
+				3F4C0C9D2AFE6C820082534F /* AppDelegate.swift in Sources */,
 				3F3904832AF164B50037BC66 /* iOSTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +423,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F4C0C952AFE6BDD0082534F /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/appcenter-sdk-apple.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F4C0C962AFE6BDD0082534F /* AppCenterAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F4C0C952AFE6BDD0082534F /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterAnalytics;
+		};
+		3F4C0C982AFE6BDD0082534F /* AppCenterCrashes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F4C0C952AFE6BDD0082534F /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterCrashes;
+		};
+		3F4C0C9A2AFE6BDD0082534F /* AppCenterDistribute */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F4C0C952AFE6BDD0082534F /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterDistribute;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F3904772AF164B50037BC66 /* Project object */;
 }
