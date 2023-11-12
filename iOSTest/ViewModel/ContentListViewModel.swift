@@ -22,6 +22,7 @@ class ContentListViewModel: ObservableObject {
         self.apiService = apiService
     }
     
+    //MARK: To get earthquake data live from provided URL. 
     func getEarthQuakeData() async {
         do {
             let response = try await apiService?.request(urlString: APIEndpoints.earthquakes.urlString, responseType: Response.self)
