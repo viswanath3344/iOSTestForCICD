@@ -38,6 +38,7 @@
 		3F39049F2AF179F80037BC66 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		3F3904A12AF17A200037BC66 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		3F4C0C9C2AFE6C820082534F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F4C0C9E2AFE7EE60082534F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 		3F3904812AF164B50037BC66 /* iOSTest */ = {
 			isa = PBXGroup;
 			children = (
+				3F4C0C9E2AFE7EE60082534F /* Info.plist */,
 				3F3904972AF169D50037BC66 /* Models */,
 				3F3904902AF1653F0037BC66 /* Networking */,
 				3F3904A32AF17CCC0037BC66 /* App */,
@@ -355,6 +357,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iOSTest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -383,6 +386,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iOSTest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

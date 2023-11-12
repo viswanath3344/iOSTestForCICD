@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AppCenterCrashes
 
 struct ContentView: View {
     @StateObject var contentVM = ContentListViewModel()
@@ -13,6 +14,12 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             Group {
+                Button {
+                    Crashes.generateTestCrash()
+                } label: {
+                    Text(Crashes.enabled.description)
+                }
+
                 if let items = contentVM.items {
                     List(items, id: \.id) { item in
                         HStack {
