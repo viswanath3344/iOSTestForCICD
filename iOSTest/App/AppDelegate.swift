@@ -17,7 +17,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
           AppCenter.logLevel = .verbose
         
-          AppCenter.start(withAppSecret: "53a2ed40-a067-493a-af26-11bbccdb6cdb", services:[
+          AppCenter.start(withAppSecret: "f08b760b-d10e-483d-a9df-2da881f6806a", services:[
             Crashes.self, Analytics.self, Distribute.self])
         
         Crashes.notify(with: .always)
