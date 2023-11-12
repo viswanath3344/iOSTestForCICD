@@ -11,7 +11,6 @@ struct EarthQuakeViewModel {
     let place: String
     let id: String
     let showAlert: Bool
-    
 }
 
 class ContentListViewModel: ObservableObject {
