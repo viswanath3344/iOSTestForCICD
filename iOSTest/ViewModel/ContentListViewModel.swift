@@ -33,7 +33,8 @@ class ContentListViewModel: ObservableObject {
                      id: feature.id,
                      showAlert: feature.properties.mag > 5)
              })
-            //MARK: Main actor to switch to main thread. 
+            
+            //MARK: Main actor to switch to main thread.
             await MainActor.run(body: {
                 items = viewModels
             })
