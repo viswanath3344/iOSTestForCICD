@@ -14,10 +14,12 @@ import AppCenterCrashes
 import AppCenterDistribute
 
 class AppDelegate: NSObject, UIApplicationDelegate {
+    let appCenterToken = "f08b760b-d10e-483d-a9df-2da881f6806a"
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
           AppCenter.logLevel = .verbose
         
-          AppCenter.start(withAppSecret: "f08b760b-d10e-483d-a9df-2da881f6806a", services:[
+          AppCenter.start(withAppSecret: appCenterToken , services:[
             Crashes.self, Analytics.self, Distribute.self])
         
         Crashes.notify(with: .always)
