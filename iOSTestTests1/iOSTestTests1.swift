@@ -38,13 +38,9 @@ final class iOSTestTests1: XCTestCase {
         }
     }
     
-    
 }
 
 class MockServiceClient: APIService {
-    
-    
-    
     func request<T>(urlString: String, responseType: T.Type) async throws -> T where T : Decodable {
        
         let property = Property(mag: 6.5, place: "Swindon")
