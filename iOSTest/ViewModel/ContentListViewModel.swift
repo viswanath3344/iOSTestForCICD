@@ -17,7 +17,8 @@ class ContentListViewModel: ObservableObject {
     @Published var items: [EarthQuakeViewModel]?
     
     var apiService: APIService?
-    
+
+    // MARK: Dependency injection. 
     init(apiService: APIService = APIClient()) {
         self.apiService = apiService
     }
