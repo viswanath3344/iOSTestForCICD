@@ -7,9 +7,11 @@
 
 import Foundation
 
+let baseUrl = "https://earthquake.usgs.gov"
+
 enum APIEndpoints: String {
     private var baseURL: String {
-        return "https://earthquake.usgs.gov"
+        return baseUrl
     }
     
     case earthquakes = "/earthquakes/feed/v1.0/summary/4.5_week.geojson"
