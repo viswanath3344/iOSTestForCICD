@@ -2,34 +2,51 @@
 //  iOSTestTests.swift
 //  iOSTestTests
 //
-//  Created by Ponthota, Viswanath Reddy (Cognizant) on 13/11/23.
+//  Created by Ponthota, Viswanath Reddy (Cognizant) on 14/11/23.
 //
 
 import XCTest
 
+@testable import iOSTest
+
 final class iOSTestTests: XCTestCase {
 
+    var sut: ContentListViewModel!
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = ContentListViewModel(apiService: MockServiceClient())
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testItemsEmpty() throws {
+        XCTAssertNil(sut.items)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+    
+    func testItemsAfterAPIResponse() throws {
+       
+        Task{
+            await sut.getEarthQuakeData()
+            XCTAssertNotNil(sut.items)
+            
+            let items = try XCTUnwrap(sut.items)
+            
+            XCTAssertEqual(items.count, 1)
         }
     }
+    
+}
 
+class MockServiceClient: APIService {
+    func request<T>(urlString: String, responseType: T.Type) async throws -> T where T : Decodable {
+       
+        let property = Property(mag: 6.5, place: "Swindon")
+        let features = [Feature(type: "type1", properties: property, id: "1334")]
+        return Response(features: features) as! T
+    }
+    
+    
 }
