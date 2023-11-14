@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F34B6A92B0388F80087229B /* iOSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34B6A82B0388F80087229B /* iOSTestTests.swift */; };
+		3F34B6A92B0388F80087229B /* ContentListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34B6A82B0388F80087229B /* ContentListViewModelTests.swift */; };
 		3F3904832AF164B50037BC66 /* iOSTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3904822AF164B50037BC66 /* iOSTestApp.swift */; };
 		3F3904852AF164B50037BC66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3904842AF164B50037BC66 /* ContentView.swift */; };
 		3F3904872AF164B70037BC66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3904862AF164B70037BC66 /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		3F34B6A62B0388F80087229B /* iOSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F34B6A82B0388F80087229B /* iOSTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestTests.swift; sourceTree = "<group>"; };
+		3F34B6A82B0388F80087229B /* ContentListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentListViewModelTests.swift; sourceTree = "<group>"; };
 		3F39047F2AF164B50037BC66 /* iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3904822AF164B50037BC66 /* iOSTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestApp.swift; sourceTree = "<group>"; };
 		3F3904842AF164B50037BC66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		3F34B6A72B0388F80087229B /* iOSTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				3F34B6A82B0388F80087229B /* iOSTestTests.swift */,
+				3F34B6A82B0388F80087229B /* ContentListViewModelTests.swift */,
 			);
 			path = iOSTestTests;
 			sourceTree = "<group>";
@@ -277,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F34B6A92B0388F80087229B /* iOSTestTests.swift in Sources */,
+				3F34B6A92B0388F80087229B /* ContentListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
