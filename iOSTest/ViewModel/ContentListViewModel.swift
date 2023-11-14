@@ -18,7 +18,7 @@ class ContentListViewModel: ObservableObject {
     
     var apiService: APIService?
 
-    //MARK:- Depedency injection. 
+    // MARK: Dependency injection. 
     init(apiService: APIService = APIClient()) {
         self.apiService = apiService
     }
