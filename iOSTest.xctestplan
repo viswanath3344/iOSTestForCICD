@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "57A793EA-AF6B-40C0-A785-B36DA3C161ED",
+      "id" : "9296F6BD-D567-4C5F-88DE-6FFD2939D615",
       "name" : "Configuration 1",
       "options" : {
 
@@ -15,8 +15,8 @@
     {
       "target" : {
         "containerPath" : "container:iOSTest.xcodeproj",
-        "identifier" : "3F4C0D1A2B0340230082534F",
-        "name" : "iOSTestTests"
+        "identifier" : "3F34B6812B0345100087229B",
+        "name" : "iOSTestUnitTests"
       }
     }
   ],
