@@ -20,7 +20,7 @@ enum APIError: Error {
         case .invalidResponse: return "Invalid response received"
         case .decodeError : return "JSON decode error"
         case .invalidStatusCode: return "Invalid status code"
-        case .unknownError: return "unknown Error"
+        case .unknownError: return "Unknown Error"
         }
     }
 }
